@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .book-mockup {
+            transform-style: preserve-3d;
+            transform: perspective(1000px) rotateY(-20deg) rotateX(10deg);
+            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            transition: 0.5s;
+        }
+        .book-mockup:hover { transform: perspective(1000px) rotateY(0deg) rotateX(0deg); }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    
+    <!-- Mockup Container -->
+    <div class="book-mockup w-64 h-80 bg-white rounded-r-lg overflow-hidden shadow-2xl">
+        <!-- REPLACE YOUR_IMAGE_URL -->
+        <img src="YOUR_IMAGE_URL_HERE" class="w-full h-full object-cover" alt="Ahmed Book Cover">
+    </div>
+
+</body>
+</html>
